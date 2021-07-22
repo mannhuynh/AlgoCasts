@@ -17,6 +17,16 @@
 //       '### '
 //       '####'
 
-function steps(n) {}
-
+function steps(n) {
+	let sharp = "#";
+	let space = " ";
+	// for (let i = 1; i <= n; i++){
+	//     console.log(`Step (${i})`);
+	for (let j = 1; j <= n; j++) {
+		console.log(`${sharp.repeat(j)}${space.repeat(n - j)}`);
+		// console.log((sharp.repeat(j)))
+	}
+}
+// }
+steps(4);
 module.exports = steps;
